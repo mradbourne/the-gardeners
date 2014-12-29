@@ -35,15 +35,50 @@
 *
 ****************/
 
+.rsDefault .rsArrow {
+	position: absolute;
+	z-index: 21;
+}
+
+.rsDefault.rsHor .rsArrowLeft  { right: 35px; top: 0; }
+.rsDefault.rsHor .rsArrowRight { right: 0; top: 0; }
+
+.rsDefault .rsArrowIcn {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	width: 0;
+	height: 0;
+	cursor: pointer;
+	.section-home & {
+		@media @xs-alt {
+			top: 30px;
+		}
+		@media @sm {
+			top: 50px;
+		}
+		@media @md {
+			top: 50%;
+		}
+	}
+}
+
+.rsDefault.rsHor .rsArrowLeft .rsArrowIcn {
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-right: 15px solid #fff;
+}
+.rsDefault.rsHor .rsArrowRight .rsArrowIcn {
+	border-top: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	border-left: 15px solid #fff;
+}
+
 @media (min-width: 1040px) {
 
 	.rsDefault .rsArrow {
 		height: 100%;
 		width: 30px;
-		position: absolute;
-		display: block;
-		cursor: pointer;
-		z-index: 21;
 	}
 
 	.rsDefault.rsVer .rsArrowLeft  { top: 0; left: 0; }
@@ -54,6 +89,7 @@
 
 	.rsDefault .rsArrowIcn {
 		top: 50%;
+		right: auto;
 		left: 50%;
 		margin-top: -35px;
 		margin-left: -16px;
@@ -64,8 +100,8 @@
 	}
 
 	.rsDefault.rsHor .rsArrowLeft .rsArrowIcn {
-		border-top: 33px solid rgba(0, 0, 0, 0);
-		border-bottom: 33px solid rgba(0, 0, 0, 0);
+		border-top: 33px solid transparent;
+		border-bottom: 33px solid transparent;
 		border-right: 29px solid @green_light;
 		&:hover,
 		&:focus {
@@ -73,8 +109,8 @@
 		}
 	}
 	.rsDefault.rsHor .rsArrowRight .rsArrowIcn {
-		border-top: 33px solid rgba(0, 0, 0, 0);
-		border-bottom: 33px solid rgba(0, 0, 0, 0);
+		border-top: 33px solid transparent;
+		border-bottom: 33px solid transparent;
 		border-left: 29px solid @green_light;
 		&:hover,
 		&:focus {
@@ -86,7 +122,7 @@
 
 }
 
-@media (min-width: 1200px) and (max-width: 1239px) {
+@media (min-width: 992px) and (max-width: 1039px), (min-width: 1200px) and (max-width: 1239px) {
 
 	.rsDefault.rsHor .rsArrowLeft,
 	.rsDefault.rsHor .rsArrowRight {
