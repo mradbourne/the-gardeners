@@ -78,7 +78,7 @@ h2, .h2 {
 }
 
 .has-green-bg {
-  background-color: @brand-primary;
+  background-color: @brand-bg;
   &.col-md-8,
   &.col-md-10 {
     border-right: 15px solid #fff;
@@ -178,7 +178,7 @@ blockquote {
     }
   }
   @media @md-max {
-    background-color: @brand-primary;
+    background-color: @brand-bg;
   }
   footer,
   small,
@@ -234,7 +234,7 @@ img.rsImg {
 }
 .rsDefault .welcome-message.rsCaption {
   width: 100%;
-  background-color: @brand-primary;
+  background-color: @brand-bg;
 }
 
 
@@ -504,7 +504,7 @@ section,
 form {
   margin-bottom: 30px;
   padding-top: 10px;
-  background-color: @brand-primary;
+  background-color: @brand-bg;
 }
 
 .form-control { padding: 10px; }
@@ -523,6 +523,7 @@ form {
     resize: none;
     z-index: 1;
     background-color: #fff;
+    text-transform: lowercase;
   }
   label {
     position: relative;
@@ -542,6 +543,7 @@ form {
     border: 1px solid #fff;
     border-radius: 0;
     z-index: 1;
+    text-transform: lowercase;
     @media @md {
       position: absolute;
       top: 79px;
@@ -553,7 +555,7 @@ form {
       &:hover,
       &:focus {
         background-color: #fff;
-        color: @brand-primary;
+        color: @brand-bg;
       }
     }
   }

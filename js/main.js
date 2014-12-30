@@ -3,7 +3,7 @@
 $("#sliderOne").royalSlider({
   usePreloader: true,
   globalCaption: true,
-  arrowsNavAutoHide: false,
+  arrowsNavAutoHide: true,
   controlsInside: false,
   autoHeight: true,
   imgHeight: 450,
