@@ -35,7 +35,7 @@ $(function() {
   $('body').on('click', '.page-scroll a', function(event) {
     var $anchor = $(this);
     $('html, body').stop().animate({
-      scrollTop: $($anchor.attr('href')).offset().top
+      scrollTop: $($anchor.attr('href')).offset().top + parseInt($('section').css('padding-top')) - $('.navbar-header').height() - parseInt($('.navbar').css('padding-top')) - parseInt($('.navbar').css('padding-bottom'))
     }, 1500, 'easeInOutExpo');
     event.preventDefault();
   });

@@ -695,28 +695,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/img\/about\/lynda.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 15402,
-		"inputAbbreviatedPath": "\/img\/about\/lynda.jpg",
-		"outputAbbreviatedPath": "\/img\/about\/lynda.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
-	"\/img\/about\/matt.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 13282,
-		"inputAbbreviatedPath": "\/img\/about\/matt.jpg",
-		"outputAbbreviatedPath": "\/img\/about\/matt.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/gallery\/gallery-1-1.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
