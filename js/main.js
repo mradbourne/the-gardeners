@@ -3,7 +3,7 @@
 $("#sliderOne").royalSlider({
   usePreloader: true,
   globalCaption: true,
-  arrowsNavAutoHide: true,
+  arrowsNav: false,
   controlsInside: false,
   autoHeight: true,
   imgHeight: 450,
@@ -12,7 +12,7 @@ $("#sliderOne").royalSlider({
   autoPlay: {
     enabled: true,
     pauseOnHover: true,
-    delay: 5000
+    delay: 4000
   }
 });
 
@@ -37,6 +37,9 @@ $(function() {
     $('html, body').stop().animate({
       scrollTop: $($anchor.attr('href')).offset().top + parseInt($('section').css('padding-top')) - $('.navbar-header').height() - parseInt($('.navbar').css('padding-top')) - parseInt($('.navbar').css('padding-bottom'))
     }, 1500, 'easeInOutExpo');
+    if ($anchor.attr('href') == '#page-top') {
+      $("#sliderOne").royalSlider('goTo','0').royalSlider('startAutoPlay');
+    }
     event.preventDefault();
   });
 });

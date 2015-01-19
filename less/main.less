@@ -224,12 +224,22 @@ img.rsImg {
   > p {
     @media @md {
       width: 50%;
+      text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
     }
     @media @lg {
       margin-bottom: 30px;
       width: 40%;
     }
+    &.text-green, &.text-white {
+      text-shadow: none;
+    }
   }
+  &.has-margin, &.has-margin-on-mobile {
+    h2 {
+      margin-left: 20px;
+    }
+  }
+
   h2 { color: #fff; }
 }
 .rsDefault .welcome-message.rsCaption {
@@ -441,9 +451,9 @@ img.rsImg {
 }
 section,
 .section-footer {
-  padding-top: 114px;
+  padding-top: 64px;
   @media @md {
-    padding-top: 124px;
+    padding-top: 74px;
   }
 }
 @media (max-width:767px) {
