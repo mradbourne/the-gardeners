@@ -314,8 +314,14 @@ img.rsImg {
 
 .navbar-contact {
   margin: 19px 0 20px;
-  .navbar-shrink & {
+  @media @md-max {
+    position: absolute;
     margin: 0;
+    top: 46px;
+    right: 70px;
+    @media @sm-max {
+      top:28px;
+    }
   }
 }
 .navbar-contact-link {
@@ -333,7 +339,7 @@ img.rsImg {
 }
 .navbar-contact-facebook {
   margin-left: 15px;
-  .navbar-shrink & {
+  @media @md-max {
     margin-left: 0;
   }
 }
@@ -343,7 +349,7 @@ img.rsImg {
   }
   .fa-stack {
     display: none;
-    .navbar-shrink & {
+    @media @md-max {
       display: inline-block;
     }
   }
@@ -392,6 +398,9 @@ img.rsImg {
 			}
 		}
 	}
+  > .container {
+    position: relative;
+  }
 }
 .navbar-default {
   background-color: #fff;
@@ -508,6 +517,11 @@ section,
   font-weight: 100;
   a {
     color: #fff;
+  }
+}
+.call-now {
+  @media @md {
+    height: 148px;
   }
 }
 form {
