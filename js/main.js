@@ -7,6 +7,7 @@ $("#sliderOne").royalSlider({
   controlsInside: false,
   autoHeight: true,
   imgHeight: 450,
+  fadeinLoadedSlide: false, 
   controlNavigation: 'none',
   loop: true,
   autoPlay: {
@@ -14,6 +15,15 @@ $("#sliderOne").royalSlider({
     pauseOnHover: true,
     delay: 4000
   }
+});
+var headerSlider = $("#sliderOne").data('royalSlider');
+headerSlider.ev.on('rsBeforeAnimStart', function(event) {
+    // before animation between slides start
+    $('.rsCaption *').css({opacity: 0.0});
+});
+headerSlider.ev.on('rsAfterSlideChange', function(event) {
+    // triggers after slide change
+    $('.rsCaption *').animate({opacity: 0.99},1000);
 });
 
 // services slider

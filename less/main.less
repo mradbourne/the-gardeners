@@ -164,10 +164,6 @@ blockquote {
   border-width: 0;
   color: #fff;
   font-weight: 500;
-  @media @sm-max {
-    margin-bottom: 5px;
-    font-size: 18px;
-  }
   @media @md {
     padding-left: 1em;
     &:before {
@@ -179,6 +175,12 @@ blockquote {
   }
   @media @md-max {
     background-color: @brand-bg;
+    height: 207px;
+  }
+  @media @sm-max {
+    margin-bottom: 5px;
+    font-size: 18px;
+    height: 190px;
   }
   footer,
   small,
@@ -208,6 +210,7 @@ blockquote {
 img.rsImg {
   width: 100% !important;
   height: auto;
+  z-index: -1;
 }
 img.rsImg {
   margin: 0 !important;
@@ -244,7 +247,6 @@ img.rsImg {
 }
 .rsDefault .welcome-message.rsCaption {
   width: 100%;
-  background-color: @brand-bg;
 }
 
 
@@ -322,6 +324,9 @@ img.rsImg {
     @media @sm-max {
       top:28px;
     }
+    @media @xs-alt-max {
+      right: 55px;
+    }
   }
 }
 .navbar-contact-link {
@@ -338,9 +343,9 @@ img.rsImg {
   }
 }
 .navbar-contact-facebook {
-  margin-left: 15px;
-  @media @md-max {
-    margin-left: 0;
+  margin-left: -5px;
+  @media @sm {
+    margin-left: 15px;
   }
 }
 .navbar-contact-phone {
@@ -424,8 +429,16 @@ img.rsImg {
 
 .welcome-message {
   font-size: 16px;
+  background-color: @brand-bg;
+  margin: -180px 0 5px 0;
+  height: 370px;
   @media @sm {
     font-size: 19px;
+    margin: -163px 0 20px 0;
+  }
+  @media @md {
+    background-color: transparent;  
+    margin: 0; 
   }
   @media @xs-alt-max {
     h2 {
@@ -444,18 +457,10 @@ img.rsImg {
 }
 .tgg-badge {
   position: absolute;
-  top: 15px;
-  right: 50%;
-  margin-right: -38.5px;
-  @media @xs-alt {
-    top: 60px;
-  }
-  @media @md {
-    top: 15px;
-  }
-  @media @md {
-    margin-right: 0;
-    right: 15px;
+  top: 50px;
+  right: 30px;
+  @media @lg {
+    top: 30px;
   }
 }
 section,
