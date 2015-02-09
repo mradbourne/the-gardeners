@@ -1023,7 +1023,7 @@
 		"outputAbbreviatedPath": "\/img\/logo-shrink.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 1
+		"processed": 0
 		},
 	"\/img\/logo.png": {
 		"fileType": 32768,
@@ -1168,46 +1168,46 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
-	"\/img\/slide-0-1140x450.jpg": {
+	"\/img\/slide-0-1140x495.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 3446,
-		"inputAbbreviatedPath": "\/img\/slide-0-1140x450.jpg",
-		"outputAbbreviatedPath": "\/img\/slide-0-1140x450.jpg",
+		"initialSize": 11589,
+		"inputAbbreviatedPath": "\/img\/slide-0-1140x495.jpg",
+		"outputAbbreviatedPath": "\/img\/slide-0-1140x495.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/slide-1-1140x450.jpg": {
+	"\/img\/slide-1-1140x495.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 481695,
-		"inputAbbreviatedPath": "\/img\/slide-1-1140x450.jpg",
-		"outputAbbreviatedPath": "\/img\/slide-1-1140x450.jpg",
+		"initialSize": 184268,
+		"inputAbbreviatedPath": "\/img\/slide-1-1140x495.jpg",
+		"outputAbbreviatedPath": "\/img\/slide-1-1140x495.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/slide-2-1140x450.jpg": {
+	"\/img\/slide-2-1140x495.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 597707,
-		"inputAbbreviatedPath": "\/img\/slide-2-1140x450.jpg",
-		"outputAbbreviatedPath": "\/img\/slide-2-1140x450.jpg",
+		"initialSize": 213789,
+		"inputAbbreviatedPath": "\/img\/slide-2-1140x495.jpg",
+		"outputAbbreviatedPath": "\/img\/slide-2-1140x495.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/slide-3-1140x450.jpg": {
+	"\/img\/slide-3-1140x495.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 540612,
-		"inputAbbreviatedPath": "\/img\/slide-3-1140x450.jpg",
-		"outputAbbreviatedPath": "\/img\/slide-3-1140x450.jpg",
+		"initialSize": 210535,
+		"inputAbbreviatedPath": "\/img\/slide-3-1140x495.jpg",
+		"outputAbbreviatedPath": "\/img\/slide-3-1140x495.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
