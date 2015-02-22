@@ -222,6 +222,17 @@ img.rsImg {
     @media @md {
       width: 50%;
       text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+    }
+    @media @lg {
+      margin-bottom: 30px;
+      width: 40%;
+    }
+    &.text-green, &.text-white {
+      text-shadow: none;
+    }
+  }
+  > p.welcome-body {
+    @media @md {
       font-size: 16px;
     }
     @media @lg {
@@ -435,7 +446,7 @@ img.rsImg {
     font-size: 19px;
     margin: -180px 0 5px 0;
     h2 {
-      margin-top: -25px;
+      margin-top: 0;
       margin-bottom: 10px;
     }
   }

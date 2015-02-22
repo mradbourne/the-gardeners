@@ -11,7 +11,7 @@ $("#sliderOne").royalSlider({
   controlNavigation: 'none',
   loop: true,
   autoPlay: {
-    enabled: true,
+    enabled: false,
     pauseOnHover: true,
     delay: 4000
   }
