@@ -97,9 +97,9 @@ h2, .h2 {
 }
 
 .has-margin-on-desktop {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
   @media @md {
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
   }
 }
 
@@ -129,7 +129,7 @@ h2, .h2 {
     }
   }
   @media @sm-max {
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
   }
 }
 
@@ -222,6 +222,7 @@ img.rsImg {
     @media @md {
       width: 50%;
       text-shadow: 0px 0px 3px rgba(0, 0, 0, 1);
+      font-size: 16px;
     }
     @media @lg {
       margin-bottom: 30px;
@@ -253,9 +254,9 @@ img.rsImg {
   overflow: hidden;
   margin-left: 15px;
   padding: 0;
-  width: 174px;
-  height: 68px;
-  background-size: 220px 68px;
+  width: 161px;
+  height: 63px;
+  background-size: 204px 63px;
   background-image: url(../img/logo-shrink.png);
   background-position: 50%;
   background-repeat: no-repeat;
@@ -422,10 +423,22 @@ img.rsImg {
 // --------------------------------------------------
 
 .welcome-message {
-  font-size: 16px;
+  font-size: 12px;
   background-color: @brand-bg;
   margin: -180px 0 5px 0;
   height: 370px;
+  h2 {
+      margin-top: 125px;
+      margin-bottom: 10px;
+  }
+  @media @xs-alt {
+    font-size: 19px;
+    margin: -180px 0 5px 0;
+    h2 {
+      margin-top: -25px;
+      margin-bottom: 10px;
+    }
+  }
   @media @sm {
     font-size: 19px;
     margin: -163px 0 20px 0;
@@ -436,7 +449,7 @@ img.rsImg {
   }
   @media @xs-alt-max {
     h2 {
-      margin-top: 30px;
+      margin-top: 65px;
       margin-bottom: 10px;
     }
   }
@@ -453,7 +466,7 @@ img.rsImg {
   position: absolute;
   top: 50px;
   right: 30px;
-  @media @lg {
+  @media @md {
     top: 30px;
   }
 }
@@ -466,7 +479,7 @@ section,
 }
 @media (max-width:767px) {
 	section {
-		padding: 75px 0;
+		padding: 25px 0;
 	}
 	section.first {
 		padding-top: 75px;
@@ -660,6 +673,10 @@ form {
 .squashy-outer500 {
   overflow: hidden;
   height: 500px;
+  border-right: solid #fff 15px;
+  @media @md-max {
+    display: none;
+  }
 }
 .squashy150 {
   min-height: 100%;
@@ -670,6 +687,9 @@ form {
 .squashy-outer150 {
   overflow: hidden;
   height: 150px;
+  @media @md-max {
+    display: none;
+  }
 }
 .squashy313 {
   min-height: 100%;
@@ -680,6 +700,9 @@ form {
 .squashy-outer313 {
   overflow: hidden;
   height: 313px;
+  @media @md-max {
+    display: none;
+  }
 }
 .squashy345 {
   min-height: 100%;
@@ -694,6 +717,9 @@ form {
   @media @lg {
     max-width: 360px;
   }
+  @media @md-max {
+    display: none;
+  }
 }
 .squashy421 {
   min-height: 100%;
@@ -704,9 +730,12 @@ form {
 .squashy-outer421 {
   overflow: hidden;
   height: 421px;
-  max-width: 617px;
+  // max-width: 617px;
   @media @lg {
     max-width: 750px;
+  }
+  @media @md-max {
+    // display: none;
   }
 }
 .stretchy img {
@@ -720,15 +749,29 @@ form {
   @media @lg {
     height: 252px;
   }
+  @media @md-max {
+    // display: none;
+  }
 }
 .stretchy3 {
   height: 421px;
+  @media @md-max {
+    // display: none;
+  }
 }
 .woodwork {
   height: 325px;
+  @media @md-max {
+    // display: none;
+  }
 }
 #sliderTwo, #sliderThree {
   .rsOverflow, .row-equalheight {
-    height: 500px !important;
+    // height: 500px !important;
+  }
+}
+.section-services {
+  @media @sm-max {
+    padding-top: 0;
   }
 }
