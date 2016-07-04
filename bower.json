@@ -1,0 +1,20 @@
+{
+  "name": "the-gardeners",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Matt Radbourne"
+  ],
+  "license": "Copyright 2014 Matt Radbourne",
+  "homepage": "https://github.com/mradbourne/the-gardeners",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
