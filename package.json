@@ -1,0 +1,22 @@
+{
+  "name": "the-gardeners",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mradbourne/the-gardeners.git"
+  },
+  "author": "Matt Radbourne",
+  "license": "Copyright 2014 Matt Radbourne",
+  "bugs": {
+    "url": "https://github.com/mradbourne/the-gardeners/issues"
+  },
+  "homepage": "https://github.com/mradbourne/the-gardeners#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
