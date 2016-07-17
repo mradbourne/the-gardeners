@@ -1,10 +1,13 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');
+var path = require('path');
+var less = require('gulp-less');
 var webserver = require('gulp-webserver');
 
-gulp.task('sass', function(){
-  return gulp.src('app/scss/application.scss')
-    .pipe(sass())
+gulp.task('less', function() {
+  return gulp.src('app/less/main.less')
+    .pipe(less({
+      paths: [ path.join(__dirname, 'less', 'includes') ]
+    }))
     .pipe(gulp.dest('app/css'));
 });
 
@@ -21,4 +24,4 @@ gulp.task('watch', function() {
     gulp.watch('app/scss/*.scss', ['sass']);
 });
 
-gulp.task('default', ['sass', 'webserver', 'watch']);
+gulp.task('default', ['less', 'webserver', 'watch']);
