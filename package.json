@@ -18,6 +18,7 @@
   "homepage": "https://github.com/mradbourne/the-gardeners#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
     "gulp-less": "^3.1.0",
     "gulp-webserver": "^0.9.1"
   }
